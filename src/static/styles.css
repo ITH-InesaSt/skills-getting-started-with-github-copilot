@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-}
 
 body {
   font-family: Arial, sans-serif;
@@ -89,9 +88,47 @@ section h3 {
 }
 
 .participants-list {
-  list-style-type: disc;
-  padding-left: 20px;
+  list-style-type: none;
+  padding-left: 0;
   margin: 0;
+}
+
+.participants-list.no-bullets {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.participants-list li {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 4px;
+  background: #fff;
+  border-radius: 2px;
+  padding: 2px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.participant-email {
+  flex: 1;
+}
+
+.delete-participant {
+  color: #c62828;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 0 4px;
+  border-radius: 2px;
+}
+.delete-participant:hover {
+  background: #ffebee;
+  color: #b71c1c;
+}
 }
 
 .participants-list li {
